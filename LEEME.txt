@@ -1,0 +1,20 @@
+ARYES — DEMO PARA NETLIFY
+
+1. Descomprimir el ZIP.
+2. Entrar a https://app.netlify.com/drop
+3. Arrastrar la CARPETA aryes-netlify (no el ZIP).
+4. Netlify crea un sitio HTTPS que se puede abrir desde el celular.
+
+INCLUYE: Dashboard, funcionarios, turnos, marcaciones con cámara y GPS, salarios estimativos, ausencias y permisos, reportes CSV, configuración.
+
+ATENCIÓN: es una demo estática. Los datos y fotos quedan guardados SOLO en el navegador mediante localStorage, no se sincronizan entre dispositivos ni usuarios. No hay autenticación ni reconocimiento facial. No ingresar información personal real. Cálculo salarial orientativo, NO apto para liquidaciones legales. Para operar en empresas es imprescindible un backend seguro, base de datos compartida, controles de acceso, privacidad y validación legal.
+
+
+NOVEDADES v4: sección Obras (asignar personal y días) y IPS · MJT · Banco (datos + CSV IPS, MJT y pago bancario).
+NOVEDADES v2 (incluye logo de Aryes Energías): modo oscuro (botón ☾), gráfico de horas de 7 días y ausentes del día en el Dashboard, buscador de funcionarios, reporte de tardanzas con CSV, copia de seguridad (exportar/importar JSON), datos de ejemplo y borrado total en Configuración.
+
+SUPABASE (v5)
+1) Supabase → SQL Editor: pegar y ejecutar supabase.sql.
+2) Authentication → Users → "Add user" (correo + contraseña) y desmarcar el registro público (Providers → Email → desactivar "Allow new users to sign up").
+3) Project Settings → API: copiar "Project URL" y la clave "anon public" en config.js.
+4) Subir la carpeta a Netlify. Con config.js vacío la app sigue en modo demo local.
